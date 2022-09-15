@@ -96,7 +96,7 @@ main {
   padding: 1.6rem;
 }
 .attribution a {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 @media screen and (min-width: 960px) {
   .product-card {
