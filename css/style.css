@@ -1,0 +1,18 @@
+:root{
+    --primary-color: hsl(158, 36%, 37%);
+    --secondary-color: hsl(30, 38%, 92%);
+    --light-color:hsl(0, 0%, 100%);
+    --medium-color:hsl(228, 12%, 48%);
+    --dark-color:hsl(212, 21%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--secondary-color);
+
+}
