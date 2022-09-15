@@ -84,6 +84,8 @@ main {
   margin-top: 16px;
   border-radius: 0.8rem;
   transition: all 0.2s ease;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 .product-card__add-to-cart:hover {
   background-color: hsl(158, 36%, 20%);
