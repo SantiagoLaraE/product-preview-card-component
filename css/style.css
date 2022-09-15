@@ -1,18 +1,122 @@
-:root{
-    --primary-color: hsl(158, 36%, 37%);
-    --secondary-color: hsl(30, 38%, 92%);
-    --light-color:hsl(0, 0%, 100%);
-    --medium-color:hsl(228, 12%, 48%);
-    --dark-color:hsl(212, 21%, 14%);
+:root {
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  --light-color: hsl(0, 0%, 100%);
+  --medium-color: hsl(228, 12%, 48%);
+  --dark-color: hsl(212, 21%, 14%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-html{
-    font-size: 62.5%;
-    background-color: var(--secondary-color);
+html {
+  font-size: 62.5%;
+  background-color: var(--secondary-color);
+}
+h1,
+h2,
+h3 {
+  font-size: 3.2rem;
+  font-family: "Fraunces", serif;
+  color: var(--dark-color);
+  margin-bottom: 1.2rem;
+}
+p {
+  font-size: 1.4rem;
+  color: var(--medium-color);
+  margin-bottom: 0.8rem;
+  line-height: 2.4rem;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  border-radius: 0.8rem;
+}
+main {
+  padding: 16px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.product-card {
+  max-width: 600px;
+}
+.product-card__img img {
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.product-card__text {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product_card__category {
+  color: var(--medium-color);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+}
+.product_card__description {
+  margin-bottom: 2.4rem;
+}
+.product_card__price--now {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: var(--primary-color);
+}
+.product_card__price--before {
+  margin-left: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--medium-color);
+  text-decoration: line-through;
+}
+.product-card__add-to-cart {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 16px;
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 0.8rem;
+  transition: all 0.2s ease;
+}
+.product-card__add-to-cart:hover {
+  background-color: hsl(158, 36%, 20%);
+}
 
+.attribution {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  text-align: center;
+  padding: 1.6rem;
+}
+.attribution a {
+  color: var(--primary-color);
+}
+@media screen and (min-width: 960px) {
+  .product-card {
+    flex-direction: row;
+  }
+  .product-card__img,
+  .product-card__text {
+    width: 50%;
+  }
+  .product-card__text {
+    padding: 3.2rem;
+  }
+  .product-card__img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+  .attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 2.4rem;
+  }
 }
